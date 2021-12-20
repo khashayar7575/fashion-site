@@ -1,0 +1,19 @@
+.social_media {
+    position: fixed;
+    bottom: 250px;
+    left: -140px;
+
+    ul {
+        transform: rotate(-90deg);
+
+        li {
+            font: {
+                size: 10px;
+                weight: 700;
+            }
+            letter-spacing: 2px;
+            display: inline-block;
+            padding: 0 30px;
+        }
+    }
+}

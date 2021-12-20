@@ -1,0 +1,42 @@
+@import 'varriables';
+
+article.text {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    @include rotate(-90deg);
+
+    h1 {
+        @include texts(120px, 900, uppercase);
+        letter-spacing: -10px;
+
+        @include textToAnimate(150px);
+        width: 600px;
+    }
+    h2 {
+        @include texts(150px, 600, uppercase);
+        position: absolute;
+        top: 40px;
+        left: -80px;
+        color: #e6de74;
+        z-index: -1;
+        letter-spacing: 8px;
+    }
+    h3 {
+        @include texts(40px, 600, uppercase);
+        @include textToAnimate(80px);
+        line-height: 1;
+    }
+    p {
+        width: 200px;
+        font-size: 12px;
+        margin-top: 30px;
+        font-weight: 500;
+
+        @include textToAnimate(110px);
+    }
+}
+
+.hidetext {
+    position: absolute;
+}

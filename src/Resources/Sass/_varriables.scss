@@ -1,0 +1,19 @@
+$sunny: #efde74;
+
+@mixin texts($size, $weight, $transform) {
+    text-transform: $transform;
+    font: {
+        size: $size;
+        weight: $weight;
+    }
+}
+
+@mixin rotate($rotate) {
+    transform: rotate(($rotate));
+}
+
+@mixin textToAnimate($height) {
+    height: $height;
+    position: relative;
+    overflow: hidden;
+}
